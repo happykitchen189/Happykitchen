@@ -1,27 +1,28 @@
   /* =========================================================
-     SAHARA DESIGN TOKENS (adapted for food)
+     HAPPY KITCHEN DESIGN TOKENS — Warm Edition
+     Gold: #C8912A  |  Red-pink: #C4395A  |  Espresso: #2D1B0E
      ========================================================= */
   :root {
-    --primary: #141417;
-    --primary-strong: #242422;
-    --secondary: #edecec;
-    --tertiary: #e5e7eb;
+    --primary: #2D1B0E;
+    --primary-strong: #1E1208;
+    --secondary: #FBF5EC;
+    --tertiary: #F2E8D9;
     --neutral: #ffffff;
-    --surface: #edecec;
-    --on-surface: #141417;
-    --accent: #000000;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --success: #22e6a8;
-    --overlay: #0f3d2e;
-    --price: #141417;
-    --price-sale: #c0392b;
-    --price-original: #6b7280;
-    --badge-instock: #22e6a8;
-    --badge-instock-text: #0f3d2e;
-    --badge-outstock: #e5e7eb;
-    --badge-outstock-text: #6b7280;
-    --badge-discount: #141417;
+    --surface: #F5EDE0;
+    --on-surface: #2D1B0E;
+    --accent: #C4395A;
+    --muted: #8B6E5A;
+    --border: #E8D9C8;
+    --success: #C8912A;
+    --overlay: #2D1B0E;
+    --price: #2D1B0E;
+    --price-sale: #C4395A;
+    --price-original: #8B6E5A;
+    --badge-instock: #C8912A;
+    --badge-instock-text: #ffffff;
+    --badge-outstock: #E8D9C8;
+    --badge-outstock-text: #8B6E5A;
+    --badge-discount: #C4395A;
     --badge-discount-text: #ffffff;
 
     --r-sm: 4px;
