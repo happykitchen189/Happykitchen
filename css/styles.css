@@ -588,15 +588,15 @@
   /* Semi-circle arrow — D-shape flush ke kanan viewport */
   .scroll-hint-arrow {
     flex-shrink: 0;
-    width: 28px;
-    height: calc(100% - 20px);
+    width: 32px;
+    height: 36px;
     background: var(--primary);
     border-radius: 100px 0 0 100px;
     display: flex; align-items: center; justify-content: center;
     padding-left: 4px;
     color: var(--neutral);
     pointer-events: none;
-    align-self: flex-start;
+    align-self: center;
   }
   .cat-chips-scroll {
     flex: 1; min-width: 0;
