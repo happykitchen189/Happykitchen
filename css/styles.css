@@ -582,26 +582,24 @@
     margin: 28px 0 20px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 20px;
-    position: relative;
+    display: flex; align-items: stretch;
   }
-  /* Semi-circle arrow — D-shape, flat kanan, bulat kiri, no shadow */
+  /* Semi-circle arrow — tinggi otomatis ngikut chip, D-shape */
   .scroll-hint-arrow {
-    position: absolute;
-    right: 0; top: 0;
-    height: 34px; width: 18px;
+    flex-shrink: 0;
+    width: 18px;
     background: var(--primary);
     border-radius: 100px 0 0 100px;
     display: flex; align-items: center; justify-content: center;
     padding-left: 2px;
     color: var(--neutral);
     pointer-events: none;
-    z-index: 3;
   }
   .cat-chips-scroll {
+    flex: 1; min-width: 0;
     display: flex; gap: 8px;
     overflow-x: auto; -webkit-overflow-scrolling: touch;
     scrollbar-width: none; padding-bottom: 2px;
-    padding-right: 24px;
   }
   .cat-chips-scroll::-webkit-scrollbar { display: none; }
   .cat-chips-scroll .chip { white-space: nowrap; flex-shrink: 0; }
