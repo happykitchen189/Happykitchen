@@ -584,35 +584,24 @@
     padding-bottom: 20px;
     position: relative;
   }
-  /* Gradient fade ke kanan sebelum arrow */
-  .cat-filter-bar::after {
-    content: '';
-    position: absolute;
-    right: 28px; top: 0; bottom: 20px;
-    width: 52px;
-    background: linear-gradient(to right, transparent, var(--neutral));
-    pointer-events: none;
-    z-index: 2;
-  }
-  /* Semi-circle arrow — hitam, setengah bulat, nempel di kanan */
+  /* Semi-circle arrow — D-shape, flat kanan, bulat kiri, no shadow */
   .scroll-hint-arrow {
     position: absolute;
     right: 0; top: 0;
-    height: 34px; width: 26px;
+    height: 34px; width: 18px;
     background: var(--primary);
-    border-radius: 34px 0 0 34px;
+    border-radius: 100px 0 0 100px;
     display: flex; align-items: center; justify-content: center;
-    padding-left: 3px;
+    padding-left: 2px;
     color: var(--neutral);
     pointer-events: none;
     z-index: 3;
-    box-shadow: -3px 0 10px rgba(20,20,23,0.10);
   }
   .cat-chips-scroll {
     display: flex; gap: 8px;
     overflow-x: auto; -webkit-overflow-scrolling: touch;
     scrollbar-width: none; padding-bottom: 2px;
-    padding-right: 48px;
+    padding-right: 24px;
   }
   .cat-chips-scroll::-webkit-scrollbar { display: none; }
   .cat-chips-scroll .chip { white-space: nowrap; flex-shrink: 0; }
