@@ -580,20 +580,23 @@
   /* Horizontal scrollable category filter bar */
   .cat-filter-bar {
     margin: 28px 0 20px;
+    margin-right: calc(-1 * var(--gutter));
     border-bottom: 1px solid var(--border);
     padding-bottom: 20px;
-    display: flex; align-items: stretch;
+    display: flex; align-items: center;
   }
-  /* Semi-circle arrow — tinggi otomatis ngikut chip, D-shape */
+  /* Semi-circle arrow — D-shape flush ke kanan viewport */
   .scroll-hint-arrow {
     flex-shrink: 0;
-    width: 18px;
+    width: 28px;
+    height: 36px;
     background: var(--primary);
     border-radius: 100px 0 0 100px;
     display: flex; align-items: center; justify-content: center;
-    padding-left: 2px;
+    padding-left: 4px;
     color: var(--neutral);
     pointer-events: none;
+    align-self: center;
   }
   .cat-chips-scroll {
     flex: 1; min-width: 0;
