@@ -582,11 +582,33 @@
     margin: 28px 0 20px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 20px;
+    position: relative; /* needed for fade overlay */
+  }
+  /* Fade gradient di kanan — visual cue "ada lebih" */
+  .cat-filter-bar::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0; bottom: 20px;
+    width: 72px;
+    background: linear-gradient(to right, transparent, var(--neutral));
+    pointer-events: none;
+    z-index: 2;
+  }
+  /* Label "Geser →" kecil di pojok kanan bawah */
+  .cat-filter-bar::before {
+    content: 'geser →';
+    position: absolute;
+    right: 0; bottom: 26px;
+    font-family: var(--font-mono); font-size: 10px;
+    color: var(--muted); letter-spacing: 0.06em;
+    pointer-events: none; z-index: 3;
   }
   .cat-chips-scroll {
     display: flex; gap: 8px;
     overflow-x: auto; -webkit-overflow-scrolling: touch;
     scrollbar-width: none; padding-bottom: 2px;
+    /* padding kanan ekstra supaya chip terakhir tidak tertimpa fade */
+    padding-right: 64px;
   }
   .cat-chips-scroll::-webkit-scrollbar { display: none; }
   .cat-chips-scroll .chip { white-space: nowrap; flex-shrink: 0; }
