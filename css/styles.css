@@ -135,9 +135,6 @@
   }
   .brand-mark {
     width: 28px; height: 28px; border-radius: 50%;
-    background: var(--primary); color: var(--neutral);
-    display: inline-flex; align-items: center; justify-content: center;
-    font-family: var(--font-display); font-size: 14px;
     object-fit: cover;
   }
   .nav-links { display: flex; gap: 28px; align-items: center; }
@@ -824,7 +821,6 @@
   @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
   @media (max-width: 420px) { .footer-grid { grid-template-columns: 1fr; } }
   footer .brand { color: var(--secondary); margin-bottom: 16px; }
-  footer .brand-mark { background: var(--secondary); color: var(--primary); }
   footer h4 {
     font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.1em;
     text-transform: uppercase; color: var(--muted);
