@@ -554,11 +554,16 @@ function renderCategoryDetail(catId) {
           <div class="chip" onclick="navigate('kategori')">
             🍽️ Semua <span class="chip-count">${ALL_PRODUCTS.length}</span>
           </div>
-          ${CATEGORIES.map(c => `
+          ${CATEGORIES.map(c => \`
             <div class="chip ${c.id === catId ? 'active' : ''}" onclick="navigate('kategori','${c.id}')">
               ${c.emoji} ${c.name} <span class="chip-count">${c.products.length}</span>
             </div>
-          `).join('')}
+          \`).join('')}
+        </div>
+        <div class="scroll-hint-arrow" aria-hidden="true">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none">
+            <path d="M1.5 1.5L6.5 6.5L1.5 11.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
       </div>
 
