@@ -470,29 +470,8 @@ function renderKategoriAll() {
         <p class="sub" style="margin-top:12px;">${CATEGORIES.length} kategori · ${ALL_PRODUCTS.length} menu · pilih sesuai kebutuhanmu.</p>
       </div>
 
-      <!-- Featured -->
-      <div style="margin-bottom:60px;">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;" class="featured-top">
-          ${CATEGORIES.slice(0,2).map(c => `
-            <div style="position:relative;aspect-ratio:16/10;border-radius:var(--r-md);overflow:hidden;cursor:pointer;background:var(--primary);" onclick="navigate('kategori','${c.id}')">
-              <img src="${IMG.cats[c.id]}" style="width:100%;height:100%;object-fit:cover;" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,23,0) 40%,rgba(20,20,23,0.82) 100%);"></div>
-              <div style="position:absolute;left:24px;bottom:24px;color:var(--neutral);max-width:70%;">
-                <div class="label-sm" style="color:var(--success);margin-bottom:8px;">✦ UNGGULAN</div>
-                <div style="font-family:var(--font-display);font-size:28px;letter-spacing:-0.02em;line-height:1.1;">${c.name}</div>
-                <div style="font-family:var(--font-mono);font-size:13px;margin-top:8px;opacity:0.9;">${c.tagline} · ${c.products.length} menu</div>
-              </div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-
       <!-- All categories -->
       <div style="margin-bottom:60px;">
-        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px;flex-wrap:wrap;gap:12px;">
-          <h2 class="h-md" style="margin:0;">Semua Kategori</h2>
-          <span class="muted" style="font-family:var(--font-mono);font-size:13px;">${CATEGORIES.length} kategori</span>
-        </div>
         <div class="cat-grid">
           ${CATEGORIES.map(c => renderCategoryCard(c)).join('')}
         </div>
